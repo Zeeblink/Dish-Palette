@@ -1,0 +1,20 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@media (max-width: 992px) {
+  .hidden {
+    display: block;
+  }
+  .flex-grow {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .hidden {
+    display: block;
+  }
+  .flex-grow {
+    display: none;
+  }
+}

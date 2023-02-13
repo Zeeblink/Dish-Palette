@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Recipe App</title>
+    <script src=""></script>
+</head>
+
+
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between shadow-md flex-wrap bg-white p-6">
+        <div class="flex items-center flex-shrink-0 text-green-600 mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">Dish Palette</span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-green-600 border-green-600 hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-green-600 hover:text-green-800 mr-4">
+              Recipes
+            </a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-green-600 hover:text-green-800 mr-4">
+              Ingredients
+            </a>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-green-600 hover:text-green-800">
+              About
+            </a>
+        </div>
+        </div>
+        <div>
+          <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-green-600 border-green-600 hover:border-transparent hover:text-green-800 hover:bg-white mt-4 lg:mt-0">Sign In</a>
+        </div>
+      </nav>
+      
+      
+
+      <!-- Main section -->
+
+    <main class="py-10">
+
+      <!-- Hero section -->
+      <div class="flex-col place-content-center w-full sm:h-full mt-16 mb-24 ">
+        <h1 class="text-center text-5xl mb-14 text-gray-800 font-sans ">Find the Perfect Recipe for your next meal</h1>
+        <div class="flex items-center justify-center pb-10">
+            <input id="search-input" class="bg-white focus:outline-none focus:shadow-outline border focus:bg-white border-gray-300 rounded-lg py-2 px-4 block w-1/2 appearance-none leading-normal" type="text" placeholder="Search for recipes">
+            <button id="search" class="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded-lg ml-4">Search</button>
+          </div>
+      </div>
+
+      <!-- List of Recipes -->
+      <div class="container mx-auto w-full">
+        <h1 class="text-3xl font-bold text-center text-gray-900 mb-10">Popular Recipes</h1>
+        <div id="recipes" class="sm:grid sm:grid-cols-3 gap-3 mx-2 w-full">
+
+          <div class=" px-2 mb-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="https://via.placeholder.com/300x200" alt="Recipe Image" class="w-full">
+              <div class="p-4">
+                <h2 class="text-xl font-medium text-gray-900 mb-2">Recipe Title</h2>
+                <p class="text-base text-gray-700">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="p-4 bg-gray-100">
+                <a href="#" class="text-base font-medium text-white px-3 py-2 bg-green-600 hover:scale-110 rounded-lg">View Recipe</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Repeat the div for other recipes -->
+        </div>
+      </div>
+    </main>
+
+
+
+    
+    <!-- Footer section -->
+    <footer class="bg-white py-6">
+      <div class="container mx-auto text-center text-gray-600">
+        Recipe App &copy; 2023
+    </div>
+    </footer>
+
+    <script src="index.js"></script>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
