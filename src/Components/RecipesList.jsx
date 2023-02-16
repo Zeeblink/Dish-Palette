@@ -6,7 +6,9 @@ const RecipesList = ( {recipes} ) => {
   }
 
   return (
-    <div className="px-2 mb-8 sm:grid">
+    <>
+    <h1 class="text-3xl font-bold text-center text-gray-900 mb-10">Popular Recipes</h1>
+    <div className="container mx-auto mb-8 sm:grid sm:grid-cols-3 gap-3">
       {recipes.map((recipe)=> (
         <div className="px-2 mb-8">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -23,7 +25,8 @@ const RecipesList = ( {recipes} ) => {
         </div>
       </div>
       ))}
-    </div>
+  </div>
+    </>
   );
 }
 
