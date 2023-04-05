@@ -1,11 +1,8 @@
-
-
 import Navigation from "./Components/Navigation";
 import Hero from "./Components/Hero"
 import RecipesList from "./Components/RecipesList";
 import Footer from "./Components/Footer"
 import { useState } from "react";
-
 
 function App() {   
   const [searchInput, setSerchInput] = useState('')
@@ -26,23 +23,21 @@ function App() {
   }
 
 
-
+ 
   return (
-    <div className="bg-gray-100">
-      
-      <Navigation/>
+    <div className="bg-gray-100">      
 
-      {/* <!-- Main section --> */}
+      <Navigation/> 
+
         <main className="py-10">
-
+        
           <Hero onSubmit={handleSubmit} searchValue={searchInput} onChange={
             (event) => setSerchInput(event.target.value)
           }/>
 
-          <RecipesList recipes={results} />
+          <RecipesList recipes={results}/>
         </main>
 
-      {/* <!-- Footer section --> */}
       <Footer/>
     </div>
   );
