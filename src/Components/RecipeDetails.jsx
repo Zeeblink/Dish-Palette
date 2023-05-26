@@ -22,7 +22,7 @@ const RecipeDetails = () => {
         setRecipe(data)
         console.log(recipe)
       })
-  }, [id])
+  }, [recipe])
 
   if (!recipe) {
     return <h1>Retrieving data...</h1>
@@ -38,7 +38,7 @@ const RecipeDetails = () => {
       <div className="container mx-auto md:pr-80">
         <button onClick={returnBack} className="text-xl text-red-600 mb-8"> Go back </button>
         <h1 className="text-3xl mb-8">{recipe.title}</h1>
-        <img src={recipe.image} alt={recipe.title} className="mb-12"/>
+        <img src={recipe.image} className="mb-12"/>
 
         {
           formatedInstructions.map((instruction) => (
