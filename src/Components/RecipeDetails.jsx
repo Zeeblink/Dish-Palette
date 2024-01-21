@@ -14,7 +14,7 @@ const RecipeDetails = () => {
   }
 
   useEffect(() => {
-    const API_KEY = '013562ac369b4664b552f29d4aa440ed'
+    const API_KEY = '2ecf0a5ce6b7456e97ff317224c58869'
     const API_URL = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`;
     fetch(API_URL)
       .then(res => res.json())
