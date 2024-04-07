@@ -17,14 +17,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run build:css && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "build:css": "tailwindcss -i ./src/index.css -o ./src/output.css --watch",
+  "predeploy": "npm run build:css && npm run build",
+  "deploy": "vercel --prod"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
